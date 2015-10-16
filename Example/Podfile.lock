@@ -1,0 +1,14 @@
+PODS:
+  - PIDebugBox (0.1.0)
+
+DEPENDENCIES:
+  - PIDebugBox (from `../`)
+
+EXTERNAL SOURCES:
+  PIDebugBox:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PIDebugBox: b966098c95c629d1a582a01343c736a26a188f57
+
+COCOAPODS: 0.38.2

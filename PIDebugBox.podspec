@@ -19,22 +19,13 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PIDebugBox"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/rcancro/PIDebugBox"
   s.license          = 'MIT'
-  s.author           = { "rcancro" => "rickycancro@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/PIDebugBox.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/rcancro/PIDebugBox.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'PIDebugBox' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = '{PIDebugBox,UIView+PIDebugBox}.{h,m}'
+  s.public_header_files = '{PIDebugBox,UIView+PIDebugBox}.h'
 end
